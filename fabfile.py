@@ -14,6 +14,7 @@ settings = {
         'armstrong.apps.articles',
         'south',
     ),
+    'ROOT_URLCONF': 'armstrong.apps.articles.tests.articles_support.urls',
     'SITE_ID': 1,
 }
 
