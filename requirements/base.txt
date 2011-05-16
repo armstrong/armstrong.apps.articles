@@ -1,0 +1,2 @@
+-e git://github.com/armstrongcms/armstrong.apps.content.git#egg=armstrong.apps.content
+-e git://github.com/tswicegood/armstrong.core.arm_content.git@base-content#egg=armstrong.core.arm_content
