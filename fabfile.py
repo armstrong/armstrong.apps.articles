@@ -13,6 +13,7 @@ settings = {
         'armstrong.apps.content',
         'armstrong.apps.articles',
         'south',
+        'reversion',
     ),
     'ROOT_URLCONF': 'armstrong.apps.articles.tests.articles_support.urls',
     'SITE_ID': 1,
