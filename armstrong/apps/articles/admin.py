@@ -11,8 +11,8 @@ class ArticleAdmin(VersionAdmin):
             'fields': ('title', 'summary', 'body', ),
         }),
 
-        fieldsets.publication(),
-        fieldsets.authors(),
+        fieldsets.PUBLICATION,
+        fieldsets.AUTHORS,
     )
 
 
