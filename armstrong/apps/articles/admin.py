@@ -8,7 +8,8 @@ from .models import Article
 class ArticleAdmin(VersionAdmin):
     fieldsets = (
         (None, {
-            'fields': ('title', 'summary', 'body', ),
+            'fields': ('title', 'summary', 'body',
+                'primary_section', 'sections', ),
         }),
 
         fieldsets.PUBLICATION,
