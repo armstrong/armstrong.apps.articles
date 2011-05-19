@@ -38,7 +38,7 @@ def build_package(dirpath, dirnames, filenames):
 
 setup(
     name='armstrong.apps.articles',
-    version='0.0.1a',
+    version='0.1',
     description='Provides the Article within Armstrong',
     author='Bay Citizen & Texas Tribune',
     author_email='info@armstrongcms.org',
