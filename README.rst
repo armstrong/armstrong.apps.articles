@@ -17,7 +17,7 @@ Installation
 ::
 
     name="armstrong.apps.articles"
-    pip install -e git://github.com/armstrongcms/$name#egg=$name
+    pip install -e git://github.com/armstrong/$name#egg=$name
 
 
 Contributing
