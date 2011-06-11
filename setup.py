@@ -38,11 +38,11 @@ def build_package(dirpath, dirnames, filenames):
 
 setup(
     name='armstrong.apps.articles',
-    version='0.1',
+    version='0.1.0.1',
     description='Provides the Article within Armstrong',
     author='Bay Citizen & Texas Tribune',
     author_email='info@armstrongcms.org',
-    url='http://github.com/armstrongcms/armstrong.apps.articles/',
+    url='http://github.com/armstrong/armstrong.apps.articles/',
     packages=packages,
     package_data={"armstrong": data_files},
     namespace_packages=["armstrong", "armstrong.apps", ],
