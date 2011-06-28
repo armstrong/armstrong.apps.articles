@@ -4,6 +4,7 @@
     "description": "Provides a concrete implementation of ContentBase",
     "install_requires": [
         "armstrong.core.arm_content",
+        "armstrong.hatband",
         "django-reversion"
     ]
 }
