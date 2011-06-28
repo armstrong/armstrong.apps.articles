@@ -1,3 +1,7 @@
--e git://github.com/armstrongcms/armstrong.apps.content.git#egg=armstrong.apps.content
--e git://github.com/tswicegood/armstrong.core.arm_content.git@base-content#egg=armstrong.core.arm_content
--e git://github.com/armstrongcms/armstrong.core.arm_sections.git#egg=armstrong.core.arm_sections
+armstrong.apps.content
+armstrong.core.arm_content
+armstrong.core.arm_sections
+
+# This is included here because the latest release of django-mptt does not have
+# the required code.
+-e git://github.com/django-mptt/django-mptt.git@0af02a95877041b2fd6d458bd95413dc1666c321#egg=django_mptt-dev
