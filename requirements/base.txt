@@ -1,4 +1,5 @@
 armstrong.apps.content
 armstrong.core.arm_content
 armstrong.core.arm_sections
+-e git://github.com/django-mptt/django-mptt.git#egg=mptt
 armstrong.hatband

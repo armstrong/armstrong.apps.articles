@@ -14,7 +14,6 @@ settings = {
         'armstrong.apps.content',
         'armstrong.apps.articles',
         'south',
-        'reversion',
         'mptt',
     ),
     'ROOT_URLCONF': 'armstrong.apps.articles.tests.articles_support.urls',
@@ -22,4 +21,6 @@ settings = {
 }
 
 main_app = "articles"
+full_name = "armstrong.apps.articles"
 tested_apps = (main_app, )
+pip_install_first = True
