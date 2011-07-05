@@ -11,7 +11,7 @@ class ArticlesAdminTestCase(ArticlesTestCase):
         self.assertCkEditorPresent(response)
         
     def testConfigurableRichText(self):
-        with patch_settings(ARMSTRONG_HATBAND_RICHTEXTEDITOR='django.forms.widgets.Textarea'):
+        with self.settings(ARMSTRONG_HATBAND_RICHTEXTEDITOR='django.forms.widgets.Textarea'):
             c = Client()
             self.assertTrue(c.login(username='test', password='test'))
             response = c.get('/admin/articles/article/add/')
