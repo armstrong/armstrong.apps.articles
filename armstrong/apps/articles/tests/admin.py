@@ -1,4 +1,4 @@
-from .._utils import *
+from ._utils import *
 from django.contrib.auth.models import User
 
 class ArticlesAdminTestCase(ArticlesTestCase):

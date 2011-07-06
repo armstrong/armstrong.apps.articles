@@ -14,16 +14,15 @@ settings = {
         'armstrong.hatband',
         'armstrong.apps.content',
         'armstrong.apps.articles',
-        'armstrong.apps.articles.tests.articles_support',
         'south',
         'mptt',
     ),
-    'ROOT_URLCONF': 'armstrong.apps.articles.tests.articles_support.urls',
+    'ROOT_URLCONF': 'armstrong.apps.articles.tests.urls',
     'SITE_ID': 1,
     'STATIC_URL': '/static/',
 }
 
 main_app = "articles"
 full_name = "armstrong.apps.articles"
-tested_apps = (main_app, 'articles_support')
+tested_apps = (main_app,)
 pip_install_first = True
