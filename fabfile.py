@@ -11,15 +11,18 @@ settings = {
         'django.contrib.sites',
         'armstrong.core.arm_content',
         'armstrong.core.arm_sections',
+        'armstrong.hatband',
         'armstrong.apps.content',
         'armstrong.apps.articles',
         'south',
-        'reversion',
         'mptt',
     ),
-    'ROOT_URLCONF': 'armstrong.apps.articles.tests.articles_support.urls',
+    'ROOT_URLCONF': 'armstrong.apps.articles.tests.urls',
     'SITE_ID': 1,
+    'STATIC_URL': '/static/',
 }
 
 main_app = "articles"
-tested_apps = (main_app, )
+full_name = "armstrong.apps.articles"
+tested_apps = (main_app,)
+pip_install_first = True
