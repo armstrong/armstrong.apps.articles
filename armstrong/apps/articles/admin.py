@@ -10,7 +10,7 @@ from .models import Article
 class ArticleAdmin(SectionTreeAdminMixin, VersionAdmin, hatband.ModelAdmin):
     fieldsets = (
         (None, {
-            'fields': ('title', 'summary', 'body',
+            'fields': ('title', 'slug', 'summary', 'body',
                 'primary_section', 'sections', ),
         }),
 
