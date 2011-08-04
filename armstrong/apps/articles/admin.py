@@ -10,10 +10,10 @@ from .models import Article
 class ArticleAdmin(SectionTreeAdminMixin, VersionAdmin, hatband.ModelAdmin):
     fieldsets = (
         (None, {
-            'fields': ('title', 'slug', 'summary', 'body',
-                'primary_section', 'sections', ),
+            'fields': ('title', 'slug', 'summary', 'body', ),
         }),
 
+        fieldsets.TAXONOMY,
         fieldsets.PUBLICATION,
         fieldsets.AUTHORS,
     )
