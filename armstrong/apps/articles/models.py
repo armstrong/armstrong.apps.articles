@@ -6,4 +6,5 @@ from django.db import models
 class Article(Content):
     body = models.TextField()
 
+    objects = models.Manager()
     published = PublishedManager()
