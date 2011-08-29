@@ -5,7 +5,7 @@
     "install_requires": [
         "armstrong.apps.content",
         "armstrong.apps.related_content>=0.1.0",
-        "armstrong.core.arm_content>=0.5.0",
+        "armstrong.core.arm_content>=0.8.1",
         "armstrong.hatband",
         "django-reversion"
     ]
