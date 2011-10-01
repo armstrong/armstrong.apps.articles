@@ -3,10 +3,10 @@
     "version": "0.7.0.alpha.0",
     "description": "Provides a concrete implementation of ContentBase",
     "install_requires": [
-        "armstrong.apps.content",
-        "armstrong.apps.related_content>=0.1.0",
-        "armstrong.core.arm_content>=0.8.1",
-        "armstrong.hatband",
-        "django-reversion"
+        "armstrong.apps.content>=1.0.0,<1.1",
+        "armstrong.apps.related_content>=1.0.0,<1.1",
+        "armstrong.core.arm_content>=1.0.0,<1.1",
+        "armstrong.hatband>=1.0.0,<1.1",
+        "django-reversion==1.4"
     ]
 }
