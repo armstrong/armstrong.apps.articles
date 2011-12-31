@@ -4,9 +4,9 @@
     "description": "Provides a concrete implementation of ContentBase",
     "install_requires": [
         "armstrong.apps.content>=1.0.0,<1.1",
-        "armstrong.apps.related_content>=1.0.0,<1.1",
+        "armstrong.apps.related_content>=1.2.0,<1.3",
         "armstrong.core.arm_content>=1.0.0,<1.1",
-        "armstrong.hatband>=1.0.0,<1.1",
+        "armstrong.hatband>=1.2.2,<1.3",
         "django-reversion==1.4"
     ]
 }
