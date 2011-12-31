@@ -1,3 +1,2 @@
 -r ./base.txt
-south
 armstrong.dev>=1.4
