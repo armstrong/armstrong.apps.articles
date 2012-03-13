@@ -2,22 +2,37 @@ armstrong.apps.articles
 =======================
 Provides a basic Article model for Armstrong
 
-.. warning:: This is development level software.  Please do not unless you are
-             familiar with what that means and are comfortable using that type
-             of software.
 
 Usage
 -----
-
-**TODO**
-
-Installation
-------------
+You can use the ``Article`` model from within any project you like.  It's
+available to import like this:
 
 ::
 
-    name="armstrong.apps.articles"
-    pip install -e git://github.com/armstrong/$name#egg=$name
+	from armstrong.apps.articles.models import Article
+
+You have access to both traditional ``Manager`` via the ``objects`` property
+as well as a ``PublishedManager`` from `armstrong.core.arm_content`_ via the
+``published`` property.
+
+.. _armstrong.core.arm_content: https://github.com/armstrong/armstrong.core.arm_content
+
+
+Installation & Configuration
+----------------------------
+You can install the latest release of ``armstrong.apps.articles`` using `pip`_:
+
+::
+
+    pip install armstrong.apps.articles
+
+Make sure to add ``armstrong.apps.articles`` to your ``INSTALLED_APPS``.  You
+can add this however you like.  This works as a copy-and-paste solution:
+
+::
+
+	INSTALLED_APPS += ["armstrong.apps.articles", ]
 
 
 Contributing
