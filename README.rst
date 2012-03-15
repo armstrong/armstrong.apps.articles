@@ -34,6 +34,7 @@ can add this however you like.  This works as a copy-and-paste solution:
 
 	INSTALLED_APPS += ["armstrong.apps.articles", ]
 
+.. _pip: http://www.pip-installer.org/
 
 Contributing
 ------------
