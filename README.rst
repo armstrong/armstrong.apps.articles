@@ -27,12 +27,16 @@ You can install the latest release of ``armstrong.apps.articles`` using `pip`_:
 
     pip install armstrong.apps.articles
 
-Make sure to add ``armstrong.apps.articles`` to your ``INSTALLED_APPS``.  You
-can add this however you like.  This works as a copy-and-paste solution:
+Make sure to add ``armstrong.apps.articles`` and ``armstrong.apps.content`` to
+your ``INSTALLED_APPS``.  You can add this however you like.  This works as a
+copy-and-paste solution:
 
 ::
 
-	INSTALLED_APPS += ["armstrong.apps.articles", ]
+	INSTALLED_APPS += ["armstrong.apps.articles", "armstrong.apps.content", ]
+
+``armstrong.apps.content`` is required because ``Article`` extends from the
+``Content`` model inside ``apps.content``.
 
 .. _pip: http://www.pip-installer.org/
 
