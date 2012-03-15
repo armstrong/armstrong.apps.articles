@@ -38,7 +38,12 @@ copy-and-paste solution:
 ``armstrong.apps.content`` is required because ``Article`` extends from the
 ``Content`` model inside ``apps.content``.
 
+Once installed, you have to run either ``syncdb``, or ``migrate`` if you are
+using `South`_.
+
 .. _pip: http://www.pip-installer.org/
+.. _South: http://south.aeracode.org/
+
 
 Contributing
 ------------
