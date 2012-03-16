@@ -2,22 +2,47 @@ armstrong.apps.articles
 =======================
 Provides a basic Article model for Armstrong
 
-.. warning:: This is development level software.  Please do not unless you are
-             familiar with what that means and are comfortable using that type
-             of software.
 
 Usage
 -----
-
-**TODO**
-
-Installation
-------------
+You can use the ``Article`` model from within any project you like.  It's
+available to import like this:
 
 ::
 
-    name="armstrong.apps.articles"
-    pip install -e git://github.com/armstrong/$name#egg=$name
+	from armstrong.apps.articles.models import Article
+
+You have access to both traditional ``Manager`` via the ``objects`` property
+as well as a ``PublishedManager`` from `armstrong.core.arm_content`_ via the
+``published`` property.
+
+.. _armstrong.core.arm_content: https://github.com/armstrong/armstrong.core.arm_content
+
+
+Installation & Configuration
+----------------------------
+You can install the latest release of ``armstrong.apps.articles`` using `pip`_:
+
+::
+
+    pip install armstrong.apps.articles
+
+Make sure to add ``armstrong.apps.articles`` and ``armstrong.apps.content`` to
+your ``INSTALLED_APPS``.  You can add this however you like.  This works as a
+copy-and-paste solution:
+
+::
+
+	INSTALLED_APPS += ["armstrong.apps.articles", "armstrong.apps.content", ]
+
+``armstrong.apps.content`` is required because ``Article`` extends from the
+``Content`` model inside ``apps.content``.
+
+Once installed, you have to run either ``syncdb``, or ``migrate`` if you are
+using `South`_.
+
+.. _pip: http://www.pip-installer.org/
+.. _South: http://south.aeracode.org/
 
 
 Contributing
@@ -55,7 +80,7 @@ probably looking for that.
 
 License
 -------
-Copyright 2011 Bay Citizen and Texas Tribune
+Copyright 2011-2012 Bay Citizen and Texas Tribune
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
