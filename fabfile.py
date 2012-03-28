@@ -17,6 +17,7 @@ settings = {
         'armstrong.apps.articles',
         'south',
         'mptt',
+        'taggit',
     ),
     'ROOT_URLCONF': 'armstrong.apps.articles.tests.urls',
     'SITE_ID': 1,
