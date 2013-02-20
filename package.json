@@ -3,7 +3,7 @@
     "version": "1.2.0alpha.0",
     "description": "Provides a concrete implementation of ContentBase",
     "install_requires": [
-        "Django>=1.3,<=1.4.4",
+        "Django>=1.3,<=1.4.5",
         "armstrong.apps.content>=1.0.2,<2.0",
         "armstrong.apps.related_content>=2.0.1,<3.0",
         "armstrong.core.arm_content>=1.3.2,<2.0",
